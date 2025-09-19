@@ -43,18 +43,12 @@ static BOOL IsEnabled(NSString *key) {
     didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> *)launchOptions {
     BOOL didFinishLaunching = %orig;
 
-    if (IsEnabled(@"flex_enabled")) {
-        [[FLEXManager sharedManager] showExplorer];
-    }
 
     return didFinishLaunching;
 }
 - (void)appWillResignActive:(id)arg1 {
     %orig;
-        if (IsEnabled(@"flex_enabled")) {
-        [[FLEXManager sharedManager] showExplorer];
     }
-}
 %end
 
 # pragma mark - Tweaks

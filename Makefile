@@ -10,12 +10,11 @@ TWEAK_NAME = YouTubeEnhanced
 DISPLAY_NAME = YouTube
 BUNDLE_ID = com.google.ios.youtube
 
-EXTRA_CFLAGS := $(addprefix -I,$(shell find Tweaks/FLEX -name '*.h' -exec dirname {} \;))
 
 YouTubeEnhanced_INJECT_DYLIBS = .theos/obj/YouPiP.dylib .theos/obj/YTABConfig.dylib .theos/obj/YTVideoOverlay.dylib .theos/obj/NoYTPremium.dylib .theos/obj/YTABGoodies.dylib .theos/obj/YouTube-X.dylib .theos/obj/YouGroupSettings.dylib
-YouTubeEnhanced_FILES = YouTubeEnhanced.xm $(shell find Source -name '*.xm' -o -name '*.x' -o -name '*.m') $(shell find Tweaks/FLEX -type f \( -iname \*.c -o -iname \*.m -o -iname \*.mm \))
+YouTubeEnhanced_FILES = YouTubeEnhanced.xm $(shell find Source -name '*.xm' -o -name '*.x' -o -name '*.m')
 YouTubeEnhanced_IPA = ./tmp/Payload/YouTube.app
-YouTubeEnhanced_CFLAGS = -fobjc-arc -Wno-deprecated-declarations -Wno-unsupported-availability-guard -Wno-unused-but-set-variable -DTWEAK_VERSION=$(PACKAGE_VERSION) $(EXTRA_CFLAGS)
+YouTubeEnhanced_CFLAGS = -fobjc-arc -Wno-deprecated-declarations -Wno-unsupported-availability-guard -Wno-unused-but-set-variable -DTWEAK_VERSION=$(PACKAGE_VERSION)
 YouTubeEnhanced_FRAMEWORKS = UIKit Security
 
 include $(THEOS)/makefiles/common.mk

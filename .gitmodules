@@ -31,6 +31,3 @@
 [submodule "Tweaks/YouTube-X"]
 	path = Tweaks/YouTube-X
 	url = https://github.com/PoomSmart/YouTube-X.git
-[submodule "Tweaks/FLEX"]
-	path = Tweaks/FLEX
-	url = https://github.com/qnblackcat/FLEX-Classes.git
