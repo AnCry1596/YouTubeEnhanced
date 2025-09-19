@@ -1,6 +1,6 @@
 #import "Tweaks/YouTubeHeader/YTPlayerViewController.h" // header.h
 #import "Tweaks/YouTubeHeader/YTQTMButton.h" // header.h
-#import "Tweaks/PSHeader/PSHeader.h" // PSHeader
+#import "Tweaks/PSHeader/PS.h" // PSHeader
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
@@ -32,11 +32,7 @@
 #import "Tweaks/YouTubeHeader/ELMCellNode.h"
 #import "Tweaks/YouTubeHeader/ELMNodeController.h"
 
-// Additional Tweak Headers
-#import "Tweaks/NoYTPremium/NoYTPremium.h"
-#import "Tweaks/YTABGoodies/YTABGoodies.h"
-#import "Tweaks/YouTube-X/YouTube-X.h"
-#import "Tweaks/YouGroupSettings/YouGroupSettings.h"
+// Additional Tweak Headers - These tweaks don't have separate header files
 
 #define LOC(x) [tweakBundle localizedStringForKey:x value:nil table:nil]
 #define YT_BUNDLE_ID @"com.google.ios.youtube"
